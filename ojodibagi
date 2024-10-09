@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int panjang, lebar, radius, luasPersegiPanjang, kelilingPersegiPanjang;
+    float luasLingkaran, kelilingLingkaran;
+    const double PI = 3.14;
+
+    cout << "Masukkan panjang Persegi Panjang : ";
+    cin >> panjang;
+
+    cout << "Masukkan lebar Persegi Panjang : ";
+    cin >> lebar;
+
+    cout << "Masukkan radius Lingkaran : ";
+    cin >> radius;
+
+    luasPersegiPanjang = panjang * lebar;           // menghitung luas persegi panjang
+    kelilingPersegiPanjang = 2 * (panjang + lebar); // menghitung keliling persegi panjang
+
+    luasLingkaran = PI * radius * radius;
+    kelilingLingkaran = 2 * PI * radius;
+
+    cout << "Luas Persegi Panjang adalah : " << luasPersegiPanjang << endl;
+    cout << "Keliling Persegi Panjang adalah : " << kelilingPersegiPanjang << endl;
+    cout << "Luas Lingkaran adalah : " << luasLingkaran << endl;
+    cout << "Keliling Lingkaran adalah : " << kelilingLingkaran;
+}
